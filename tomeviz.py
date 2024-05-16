@@ -104,8 +104,8 @@ def update_graph(n_clicks, subcorpus, target):
         paper_bgcolor='rgba(255,255,255,255)',  # set the color of the area around the axes
         plot_bgcolor='rgba(255,255,255,255)',  # set the color of the entire chart
         autosize=False,
-        width=1000,
-        height=800,
+        width=500,
+        height=500,
         margin=dict(l=0, r=0, b=0, t=0),
         hovermode='closest',
         showlegend=False
