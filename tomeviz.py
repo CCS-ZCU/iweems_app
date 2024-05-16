@@ -1,4 +1,5 @@
-from dash import Dash, html, dcc, callback, Output, Input
+import dash
+from dash import Dash, html, dcc, callback, Output, Input, State
 import plotly.express as px
 import plotly.graph_objects as go
 
@@ -49,26 +50,27 @@ app.layout = html.Div([
     dcc.Dropdown(options=[{'label': key, 'value': key} for key in vectors_dict.keys()], value='1501-1550',
                  id='dropdown-selection'),
     dcc.Input(id="target-term", value="scientia", type="text"),
-    html.Button(id='submit-button', n_clicks=1, children='Submit'),
+    html.Button(id='submit-button', n_clicks=0, children='Submit'),
     dcc.Graph(id='graph-content', style={'width': '100%', 'height': '100vh'})
 ])
 
 
 @app.callback(
     Output('graph-content', 'figure'),
-    Input('submit-button', 'n_clicks'),
-    Input('dropdown-selection', 'value'),
-    Input('target-term', 'value'),
+    [Input('submit-button', 'n_clicks'),
+     State('dropdown-selection', 'value'),
+     State('target-term', 'value')]
 )
 def update_graph(n_clicks, subcorpus, target):
-    # Update only when the submit button is pressed
-    if n_clicks < 1:
+    if n_clicks < 1:  # If submit-button has not been clicked yet, do not update
         return dash.no_update
+
     xs, ys, zs, words = coordinates3s_dict[subcorpus]
-    word_dict = filtered_vocab_df.apply(lambda row: "wordcount: " + str(row[subcorpus]) + ", translation: " + row["transl"], axis=1).to_dict()
+    word_dict = filtered_vocab_df.apply(
+        lambda row: "wordcount: " + str(row[subcorpus]) + ", translation: " + row["transl"], axis=1).to_dict()
 
     wordlist = [target] + [tup[0] for tup in vectors_dict[subcorpus].most_similar(target, topn=topn)]
-    idx = [word[0] for word in enumerate(words) if word[1] in wordlist] # find the positional indeces
+    idx = [word[0] for word in enumerate(words) if word[1] in wordlist]  # find the positional indeces
     wordlist_xs, wordlist_ys, wordlist_zs = xs[idx], ys[idx], zs[idx]
 
     hover_text = [word + ": " + word_dict[word] for word in wordlist]
@@ -77,23 +79,34 @@ def update_graph(n_clicks, subcorpus, target):
         x=wordlist_xs,
         y=wordlist_ys,
         z=wordlist_zs,
-        mode='markers',
+        mode='markers+text',
         marker=dict(
             size=5,
             color='purple',
             opacity=0.3
         ),
-        text=hover_text,  # use mapped hover text
-        hoverinfo='text',  # ensure only the text field is displayed on hover
+        text=wordlist,
+        hovertext=hover_text,  # use the prepared hover text mapping
+        hoverinfo='text'  # use mapped hover text
     ))
 
     fig.update_layout(
         title='Embeddings',
         scene=dict(
-            xaxis_title='X Axis',
-            yaxis_title='Y Axis',
-            zaxis_title='Z Axis'
+            xaxis=dict(title='', showgrid=False, showline=False, showticklabels=False, zeroline=False,
+                       linecolor='rgba(0,0,0,0)'),
+            yaxis=dict(title='', showgrid=False, showline=False, showticklabels=False, zeroline=False,
+                       linecolor='rgba(0,0,0,0)'),
+            zaxis=dict(title='', showgrid=False, showline=False, showticklabels=False, zeroline=False,
+                       linecolor='rgba(0,0,0,0)'),
+            bgcolor='rgba(255,255,255,0)'
         ),
+        paper_bgcolor='rgba(255,255,255,255)',  # set the color of the area around the axes
+        plot_bgcolor='rgba(255,255,255,255)',  # set the color of the entire chart
+        autosize=False,
+        width=1000,
+        height=800,
+        margin=dict(l=0, r=0, b=0, t=0),
         hovermode='closest',
         showlegend=False
     )
