@@ -2,17 +2,33 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 references:
   - type: "software"
-authors: 
-  affiliation: ""
-      family-names: ""
-      given-names: ""
-      orcid: ""-
+authors:
+  - family-names: "Kaše"
+    given-names: "Vojtěch"
+    affiliation: "CCS-Lab, University of West Bohemia & Institute of Philosophy, Czech Academy of Sciences"
+    orcid: "0000-0000-0000-0000"  # Add the ORCID if available, or remove this line if not
+  - family-names: "Švadlenková"
+    given-names: "Jana"
+    affiliation: "CCS-Lab, University of West Bohemia & Institute of Philosophy, Czech Academy of Sciences"
+    orcid: "0000-0000-0000-0000"  # ORCID ID if available
+  - family-names: "Tvrz"
+    given-names: "Jan"
+    affiliation: "CCS-Lab, University of West Bohemia & Institute of Philosophy, Czech Academy of Sciences"
+    orcid: "0000-0000-0000-0000"  # ORCID ID if available
+  - family-names: "Pavlas"
+    given-names: "Petr"
+    affiliation: "Institute of Philosophy, Czech Academy of Sciences"
+    orcid: "0000-0000-0000-0000"  # ORCID ID if available
 license: cc-by-nc-4.0
-repository-code: ""
-title: ""
-version:
-doi: 
-date-released: 2023-04-27
-abstract: ""
+repository-code: "https://github.com/your-repository-url"
+title: "Your Software Title"
+version: 0.2
+doi: ""  # Add your DOI if available
+date-released: 2024-09-05
+abstract: "This software provides..."
 keywords:
-  - ""
+  - "visualization"
+  - "word embeddings"
+  - "early modern science"
+  - "latin NLP"
+
