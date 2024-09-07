@@ -34,8 +34,27 @@ curl -L https://github.com/CCS-ZCU/noscemus_ETF/raw/master/data/metadata_table_l
 
 ```
 
+### To run the app:
+ ensure that you use the right python environment:
+```bash
+souce tomevizvenv/bin/activatate
+```
+To run your app locally:
+```
+python tomeviz.py
+```
+To run it on the IP, (1) change the IP address of you machine in tomeviz.py and then (2) run:
+```
+python tomeviz --onip
+```
 
-Go to `scripts` and run the notebooks
+# Deployment with heroku
+
+We have also deployed the app using heroku. Once you create a new version, (1) commit it using git,
+(2) login interactively to heroku (`heroku login`) and (3) push it to heroku git (`git push heroku master`)
+)
+
+
 
 ## How to cite
 
