@@ -128,13 +128,13 @@ def update_graph(n_clicks, subcorpus, target, topn):
 
 if __name__ == '__main__':
     # Argument parsing to check for the 'onip' flag
-    parser = argparse.ArgumentParser(description='Run Dash app on specific IP or locally.')
-    parser.add_argument('--onip', action='store_true', help='Run the app on a specific IP address')
+    parser = argparse.ArgumentParser(description='Run Dash app publicly or locally.')
+    parser.add_argument('--onip', action='store_true', help='Run the app publicly.')
     args = parser.parse_args()
 
     if args.onip:
-        # Run on specific IP address
-        app.run(debug=True, host='147.228.19.115')
+        # Run to be 
+        app.run(debug=True, host='0.0.0.0')
     else:
         # Run locally (default)
         app.run(debug=True)
