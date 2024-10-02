@@ -37,3 +37,21 @@ Dash is running on http://:::8050/
 
  * Serving Flask app 'tomeviz'
  * Debug mode: on
+Traceback (most recent call last):
+  File "/home/jupyter-vojta/notebooks/tomeviz/tomeviz.py", line 3, in <module>
+    import plotly.express as px
+  File "/opt/tljh/hub/lib/python3.10/site-packages/plotly/express/__init__.py", line 9, in <module>
+    raise ImportError(
+ImportError: Plotly express requires pandas to be installed.
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+  File "/home/jupyter-vojta/notebooks/tomeviz/tomeviz.py", line 95
+    hover_text = [word + ": " + word_dict[word],  for word in zip(wordlist, sim_scores)]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: did you forget parentheses around the comprehension target?
+  File "/home/jupyter-vojta/notebooks/tomeviz/tomeviz.py", line 118
+    yaxis=dict(title='', showgrid=False, showline=False, showticklabels=False
+              ^
+SyntaxError: '(' was never closed

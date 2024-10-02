@@ -6,6 +6,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import requests
 import pickle
+import numpy as np
 
 import argparse  # Import argparse for command-line arguments
 
@@ -37,13 +38,15 @@ with open(path + "vectors_dict_comp_v0-1.pkl", "rb") as f:
 
 # selecting data on the basis of subcorporpus & target
 xs, ys, zs, words = coordinates3d_dict[subcorpus]
-word_dict = filtered_vocab_df.apply(lambda row: "wordcount: " + str(row[subcorpus]) + ", translation: " + row["transl"], axis=1).to_dict()
+word_dict = filtered_vocab_df.apply(lambda row: "<br>wordcount: " + str(row[subcorpus]) + "<br>translation: " + row["transl"], axis=1).to_dict()
 
-wordlist = [target] + [tup[0] for tup in vectors_dict[subcorpus].most_similar(target, topn=topn)]
+nns_tuples = vectors_dict[subcorpus].most_similar(target, topn=topn)
+wordlist = [target] + [tup[0] for tup in nns_tuples]
+sim_scores = [str(1)] + [str(np.round(tup[1], 2)) for tup in nns_tuples]
 idx = [word[0] for word in enumerate(words) if word[1] in wordlist] # find the positional indeces
 wordlist_xs, wordlist_ys, wordlist_zs = xs[idx], ys[idx], zs[idx]
 
-hover_text = [word + ": " + word_dict[word] for word in wordlist]
+hover_text = [word + word_dict[word] + "<br>similarity to target ({0}): {1}".format(target, sim) for word, sim in zip(wordlist, sim_scores)]
 
 app = Dash(__name__)
 server = app.server  # You can explicitly define server
@@ -81,13 +84,15 @@ def update_graph(n_clicks, subcorpus, target, topn):
 
     xs, ys, zs, words = coordinates3d_dict[subcorpus]
     word_dict = filtered_vocab_df.apply(
-        lambda row: "wordcount: " + str(row[subcorpus]) + ", translation: " + row["transl"], axis=1).to_dict()
+        lambda row: "<br>wordcount: " + str(row[subcorpus]) + "<br>translation: " + row["transl"], axis=1).to_dict()
 
-    wordlist = [target] + [tup[0] for tup in vectors_dict[subcorpus].most_similar(target, topn=topn)]
+    nns_tuples = vectors_dict[subcorpus].most_similar(target, topn=topn)
+    wordlist = [target] + [tup[0] for tup in nns_tuples]
+    sim_scores = [str(1)] + [str(np.round(tup[1], 2)) for tup in nns_tuples]
     idx = [word[0] for word in enumerate(words) if word[1] in wordlist]  # find the positional indeces
     wordlist_xs, wordlist_ys, wordlist_zs = xs[idx], ys[idx], zs[idx]
 
-    hover_text = [word + ": " + word_dict[word] for word in wordlist]
+    hover_text = [word + word_dict[word] + "<br>similarity to target ({0}): {1}".format(target, sim) for word, sim in zip(wordlist, sim_scores)]
     # define the figure object
     fig = go.Figure(data=go.Scatter3d(
         x=wordlist_xs,
@@ -117,9 +122,7 @@ def update_graph(n_clicks, subcorpus, target, topn):
         ),
         paper_bgcolor='rgba(255,255,255,255)',  # set the color of the area around the axes
         plot_bgcolor='rgba(255,255,255,255)',  # set the color of the entire chart
-        autosize=False,
-        width=500,
-        height=500,
+        autosize=True,
         margin=dict(l=0, r=0, b=0, t=0),
         hovermode='closest',
         showlegend=False
