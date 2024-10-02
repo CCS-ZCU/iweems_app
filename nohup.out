@@ -33,3 +33,7 @@ Dash is running on http://:::8050/
 2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¼à\x8b\x7f/£"ÕA0cø\x9bäá+hÎÑü±Å´\x98\x96øTL\x80èb\x91')
 2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:22] code 400, message Bad request version ('\x96×O1]ó\x1a_2?\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
 2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:23] code 400, message Bad request version ('\x06\x9dõø\x82ðN\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on

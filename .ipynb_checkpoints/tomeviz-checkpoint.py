@@ -133,11 +133,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     if args.onip:
-        # Run to be 
-        app.run(debug=True, host='0.0.0.0')
+        # Run to be public and bind to IPv6 as well
+        app.run(debug=True, host='::', port=8050)
     else:
         # Run locally (default)
-        app.run(debug=True)
+        app.run(debug=True, host='::', port=8050)
 
 #if __name__ == '__main__':
 #    app.run(debug=True)
