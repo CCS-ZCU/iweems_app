@@ -1,0 +1,35 @@
+python: can't open file '/home/jupyter-vojta/notebooks/tomeviz/app.py': [Errno 2] No such file or directory
+Dash is running on http://0.0.0.0:8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+147.228.128.13 - - [26/Sep/2024 11:41:35] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')
+147.228.128.13 - - [26/Sep/2024 11:41:35] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+Dash is running on http://0.0.0.0:8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version ('¨\x10:\x9fß\x00*ZZ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version (':\x13Ne\x90è\x9bÒ[\x8d\x18ù\x97\x9ej=\x02¥\x1bYÕH\x10D\x00***\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version (':\x0e\x19¶\x8f\x08çÍó\x12GF1&\x00*ÚÚ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version ('\x8f\x8bv.ou]C\x8f\x96§µ\x08\x12ÖÏ\x98\x8eà\x96\x9aÆU\x00*\x8a\x8a\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version ('\x97\x14L\x08Sj\x82\x02Rö±®}òyí\x9dÀa')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version ('\x83ÒìÎ}\x95àa\x05\x1aD\x9c©\x98Å)\x1ad\x10\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version ('\x8fó')
+2a00:11b7:221c:f600:ccab:ea07:ff88:fcb9 - - [30/Sep/2024 22:09:27] code 400, message Bad request version ('W¸m\x00*êê\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b1:1100:921b:5966:a10e:31f2:99dc - - [01/Oct/2024 15:20:31] code 400, message Bad request version ('Ëm\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 15:58:53] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03j1Ï\x811ð»%Úkul')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 15:58:53] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ÐB\x1aè¬<')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 15:58:53] code 400, message Bad request version ('\x12S\x00\x00\x14À')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:19] code 400, message Bad request version ('½¼.j\x8b\x03tÉ>ÞzÒ\x11Óí²\x1b\x00*JJ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:19] code 400, message Bad request version ('\x7f\x19\x05HD§ðg»°\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:19] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03ã±¿ÔÎ«\x8fÉ-Y.î\x96\x0eB¸/Ü\x94\x159<4\x96ºõÙäûºæ\x1a')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:19] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03²\x02~\x06\x04\x14t0Ë@8ò+!uxáØU\x8f×\x9b±øªÃU\x19h\x942_')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:20] code 400, message Bad request version ('+[Ø\x0f')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:21] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¼à\x8b\x7f/£"ÕA0cø\x9bäá+hÎÑü±Å´\x98\x96øTL\x80èb\x91')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:22] code 400, message Bad request version ('\x96×O1]ó\x1a_2?\x00*ªª\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+2a00:11b1:100a:b720:c875:80ee:58d5:fbf6 - - [01/Oct/2024 16:21:23] code 400, message Bad request version ('\x06\x9dõø\x82ðN\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
