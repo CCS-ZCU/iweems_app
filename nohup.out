@@ -55,3 +55,78 @@ SyntaxError: did you forget parentheses around the comprehension target?
     yaxis=dict(title='', showgrid=False, showline=False, showticklabels=False
               ^
 SyntaxError: '(' was never closed
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+::ffff:147.228.128.10 - - [15/Oct/2024 15:30:05] code 400, message Bad request version ('z¡Ú\xad½ýè"~½Ì;\x97\'0þ\x05\x96®M\x9d\x00"\x13\x01\x13\x03\x13\x02À+À/Ì©Ì¨À,À0À')
+Traceback (most recent call last):
+  File "/home/jupyter-vojta/notebooks/tomeviz/tomeviz.py", line 3, in <module>
+    import plotly.express as px
+  File "/opt/tljh/hub/lib/python3.10/site-packages/plotly/express/__init__.py", line 9, in <module>
+    raise ImportError(
+ImportError: Plotly express requires pandas to be installed.
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+/home/jupyter-vojta/notebooks/tomeviz/tomevizvenv/lib/python3.10/site-packages/gensim/models/keyedvectors.py:551: UserWarning: Adding single vectors to a KeyedVectors which grows by one each time can be costly. Consider adding in batches or preallocating to the required size.
+  warnings.warn(
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Address already in use
+Port 8050 is in use by another program. Either identify and stop that program, or start the server with a different port.
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
+Dash is running on http://:::8050/
+
+ * Serving Flask app 'tomeviz'
+ * Debug mode: on
