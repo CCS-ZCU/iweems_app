@@ -19,6 +19,10 @@ It can be executed by running commands in `iweems_run.sh`.
 
 But the app should start automatically after reboot - see `/etc/systemd/system/iweems.service`
 
+To update the app:
+* make the changes in the code (`iweems-streamlit.py`)
+* restart the app: `sudo systemctl restart iweems.service`
+
 ## Getting started
 
 ### To setup your python evnironment
