@@ -5,7 +5,8 @@ import numpy as np
 import pickle
 
 # page title
-st.write('''# tomeviz: Interactive word embeddings for Latin
+st.write('''
+# iWEEMS: Interactive Word Embeddings for Early Modern Science
 
 ''')
 

@@ -9,8 +9,15 @@ CC-BY-SA 4.0, see attached LICENSE.md
 
 ---
 ## Description
+On the server, the app is located in `/srv/webserver/apps/iweems_app`
 
-[What is the purpose of this repo? Is it related to any specific dataset or publication output?]
+The code of the app sits in the file `iweems-streamlist.py`.
+
+It is configured to work well with our global `latin_venv` (`/srv/venvs/latin_venv`) python environment.
+
+It can be executed by running commands in `iweems_run.sh`.
+
+But the app should start automatically after reboot - see `/etc/systemd/system/iweems.service`
 
 ## Getting started
 
