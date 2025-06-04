@@ -2,18 +2,23 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "iWEEMS: Interactive Word Embeddings for Early Modern Science"
 version: "0.1"
-message:
-  "In this repository, we make available the source code for an app developed for an interactive visualization of the WEEMS (Word Embeddings for Early Modern Science) models.
-
-  We currently host the app publicly on our own webserver: https://ccs-lab.zcu.cz/iweems/
-
-  We describe the models in the respective repository: https://doi.org/10.5281/zenodo.15418943.
-
-  This repository is part of the TOME project."
-
+description: >
+  This repository contains the source code of iWEEMS, an interactive web application for the visualization of
+  Word Embeddings for Early Modern Science (WEEMS). The application allows users to explore semantic spaces
+  derived from historical scientific texts. A public instance is hosted at https://ccs-lab.zcu.cz/iweems/.
+  The underlying WEEMS models are documented and published separately at https://doi.org/10.5281/zenodo.15418943.
+  This tool was developed as part of the TOME project.
 license: "CC-BY-SA-4.0"
+repository-code: "https://github.com/ccs-zcu/iweems"  # optional but recommended if public
+doi: "10.5281/zenodo.15418945"  # optional, only if this repo has its own DOI
+keywords:
+  - interactive visualization
+  - word embeddings
+  - early modern science
+  - digital humanities
+  - historical semantics
 funding:
-  - name: "TOME (LL2320), funded by the Ministry of Education Youth and Sports, Czech Republic"
+  - name: "TOME (LL2320), funded by the Ministry of Education, Youth and Sports, Czech Republic"
 authors:
   - family-names: "Kaše"
     given-names: "Vojtěch"
