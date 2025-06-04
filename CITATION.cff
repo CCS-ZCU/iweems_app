@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title: "iWEEMS: Interactive Word Embeddings for Early Modern Science"
 version: "0.1"
-description:
+message:
   "In this repository, we make available the source code for an app developed for an interactive visualization of the WEEMS (Word Embeddings for Early Modern Science) models.
 
   We currently host the app publicly on our own webserver: https://ccs-lab.zcu.cz/iweems/
