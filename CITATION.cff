@@ -3,13 +3,13 @@ message: "If you use this software, please cite it as below."
 title: "iWEEMS: Interactive Word Embeddings for Early Modern Science"
 version: "0.1"
 description:
-  In this repository, we make available the source code for an app developed for an interactive visualization of the WEEMS (Word Embeddings for Early Modern Science) models.
+  "In this repository, we make available the source code for an app developed for an interactive visualization of the WEEMS (Word Embeddings for Early Modern Science) models.
 
   We currently host the app publicly on our own webserver: https://ccs-lab.zcu.cz/iweems/
 
   We describe the models in the respective repository: https://doi.org/10.5281/zenodo.15418943.
 
-  This repository is part of the TOME project.
+  This repository is part of the TOME project."
 
 license: "CC-BY-SA-4.0"
 funding:
