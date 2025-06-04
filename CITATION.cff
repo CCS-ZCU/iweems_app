@@ -5,15 +5,13 @@ version: "0.1"
 description:
   In this repository, we make available the source code for an app developed for an interactive visualization of the WEEMS (Word Embeddings for Early Modern Science) models.
 
-  We currently deploy the app publicly on our own webserver: https://ccs-lab.zcu.cz/iweems/
+  We currently host the app publicly on our own webserver: https://ccs-lab.zcu.cz/iweems/
 
   We describe the models in the respective repository: https://doi.org/10.5281/zenodo.15418943.
 
   This repository is part of the TOME project.
 
-
-
-license: "CC BY-SA 4.0"
+license: "CC-BY-SA-4.0"
 funding:
   - name: "TOME (LL2320), funded by the Ministry of Education Youth and Sports, Czech Republic"
 authors:
