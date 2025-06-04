@@ -1,5 +1,16 @@
-#  tomeviz: interactive visualizations of latin embeddings
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15591687.svg)](https://doi.org/10.5281/zenodo.15591687)
 
+# iWEEMS: Interactive Word Embeddings for Early Modern Science
+
+This repository contains the source code of iWEEMS, an interactive web application for the visualization of 
+Word Embeddings for Early Modern Science (WEEMS). The application allows users to explore semantic spaces 
+derived from corpora of Early Modern Latin scientific texts. 
+
+A more detailed description is available in `overview.py`
+
+🔗 Public instance: https://ccs-lab.zcu.cz/iweems  
+📄 WEEMS models: https://doi.org/10.5281/zenodo.15418943  
+📚 Developed as part of the TOME project (LL2320).
 ---
 ## Authors
 * [see citation file]
@@ -8,7 +19,7 @@
 CC-BY-SA 4.0, see attached LICENSE.md
 
 ---
-## Description
+## Technical details
 On the server, the app is located in `/srv/webserver/apps/iweems_app`
 
 The code of the app sits in the file `iweems-streamlist.py`.
@@ -23,54 +34,3 @@ To update the app:
 * make the changes in the code (`iweems-streamlit.py`)
 * restart the app: `sudo systemctl restart iweems.service`
 
-## Getting started
-
-### To setup your python evnironment
-
-```
-git clone [url-of-the-git-file]
-cd [name-of-the-repo]
-python3 -m venv tomevizvenv
-source tomevizvenv/bin/activatate
-pip install -r requirements.txt
-ipykernel install --user --name tomeviz_kernel
-```
-
-### To download the latest data
-```
-curl -L https://github.com/CCS-ZCU/noscemus_ETF/raw/master/data/vectors_dict_comp.pkl -o data/vectors_dict_comp_TEST.pkl
-curl -L https://github.com/CCS-ZCU/noscemus_ETF/raw/master/data/coordinates3d_dict.pkl -o data/coordinates3d_dict.pkl
-curl -L https://github.com/CCS-ZCU/noscemus_ETF/raw/master/data/filtered_vocab_df.json -o data/filtered_vocab_df.json
-curl -L https://github.com/CCS-ZCU/noscemus_ETF/raw/master/data/metadata_table_long.json -o data/metadata_table_long.json
-
-```
-
-### To run the app:
- ensure that you use the right python environment:
-```bash
-souce tomevizvenv/bin/activatate
-```
-To run your app locally:
-```
-python tomeviz.py
-```
-To run it on the IP, (1) change the IP address of you machine in tomeviz.py and then (2) run:
-```
-python tomeviz --onip
-```
-
-# Deployment with heroku
-
-We have also deployed the app using heroku. Once you create a new version, (1) commit it using git,
-(2) login interactively to heroku (`heroku login`) and (3) push it to heroku git (`git push heroku master`)
-)
-
-
-
-## How to cite
-
-[once a release is created and published via zenodo, put its citation here]
-
-## Ackwnowledgement
-
-[This work has been supported by ...]

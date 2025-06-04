@@ -3,6 +3,7 @@ import streamlit as st
 
 def app():
     st.markdown("""
+    [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15591687.svg)](https://doi.org/10.5281/zenodo.15591687)
     # iWEEMS: Interactive Word Embeddings for Early Modern Science
 
     This web app serves as an interactive visualization of the [WEEMS](https://zenodo.org/records/15418943) (Word Embeddings for Early Modern Science) models, a series of word vector models trained on two corpora of Early Modern Latin texts:
