@@ -11,9 +11,6 @@ A more detailed description is available in `overview.py`
 🔗 Public instance: https://ccs-lab.zcu.cz/iweems  
 📄 WEEMS models: https://doi.org/10.5281/zenodo.15418943  
 📚 Developed as part of the TOME project (LL2320).
----
-## Authors
-* [see citation file]
 
 ## License
 CC-BY-SA 4.0, see attached LICENSE.md
